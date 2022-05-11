@@ -34,39 +34,67 @@
 function Transformation() {
 
     var xml;
-    
+    var paramValue;
+    var paramName;
+
     var xmlDoc;
-    
+
     var xslt;
-    
+
     var xsltDoc;
 
-    var callback = function() {};
-    
+    var callback = function () { };
+
     /**
      * Sort of like a fix for Opera who doesn't always get readyStates right.
      */
     var transformed = false;
-        
+
+    /**
+     * Sets the parameter name of the XSL document.
+     * 
+     * @param x the name of parameter
+     * @return this
+     * @type Transformation
+     */
+     this.setParamName = function (x) {
+        // alert("setParamName: " + x)
+        paramName = x;
+        return this;
+    }
+
+    /**
+     * Sets the parameter of the XSL document.
+     * 
+     * @param x the value of parameter
+     * @return this
+     * @type Transformation
+     */
+     this.setParamValue = function (x) {
+        paramValue = x;
+        return this;
+    }
+
+
     /**
      * Returns the URL of the XML document.
      * 
      * @return the URL of the XML document
      * @type String
      */
-    this.getXml = function() {
+    this.getXml = function () {
         return xml;
     }
-    
+
     /**
      * Returns the XML document.
      * 
      * @return the XML document
      */
-    this.getXmlDocument = function() {
+    this.getXmlDocument = function () {
         return xmlDoc
     }
-    
+
     /**
      * Sets the URL of the XML document.
      * 
@@ -74,30 +102,30 @@ function Transformation() {
      * @return this
      * @type Transformation
      */
-    this.setXml = function(x) {
+    this.setXml = function (x) {
         xml = x;
         return this;
     }
-    
+
     /**
      * Returns the URL of the XSLT document.
      * 
      * @return the URL of the XSLT document
      * @type String
      */
-    this.getXslt = function() {
+    this.getXslt = function () {
         return xslt;
     }
-    
+
     /**
      * Returns the XSLT document.
      * 
      * @return the XSLT document
      */
-    this.getXsltDocument = function() {
+    this.getXsltDocument = function () {
         return xsltDoc;
     }
-    
+
     /**
      * Sets the URL of the XSLT document.
      * 
@@ -105,20 +133,20 @@ function Transformation() {
      * @return this
      * @type Transformation
      */
-    this.setXslt = function(x) {
+    this.setXslt = function (x) {
         xslt = x;
         return this;
     }
-    
+
     /**
      * Returns the callback function.
      * 
      * @return the callback function
      */
-    this.getCallback = function() {
+    this.getCallback = function () {
         return callback;
     }
-    
+
     /**
      * Sets the callback function
      * 
@@ -126,11 +154,11 @@ function Transformation() {
      * @return this
      * @type Transformation
      */
-    this.setCallback = function(c) {
+    this.setCallback = function (c) {
         callback = c;
         return this;
     }
-    
+
     /**
      * Sets the target element to write the transformed content to and <em>asynchronously</em>
      * starts the transformation process.
@@ -146,17 +174,17 @@ function Transformation() {
      * 
      * @param target the ID of an element
      */
-    this.transform = function(target) {
+    this.transform = function (target) {
         if (!browserSupportsXSLT()) {
-           return;
+            return;
         }
         var str = /^\s*</;
         var t = this;
         if (document.recalc) {
-            var change = function() {
+            var change = function () {
                 var c = 'complete';
                 if (xm.readyState == c && xs.readyState == c) {
-                    window.setTimeout(function() {
+                    window.setTimeout(function () {
                         xmlDoc = xm.XMLDocument;
                         xsltDoc = xs.XMLDocument;
                         callback(t);
@@ -164,15 +192,15 @@ function Transformation() {
                     }, 50);
                 }
             };
-            
+
             var xm = document.createElement('xml');
             xm.onreadystatechange = change;
             xm[str.test(xml) ? "innerHTML" : "src"] = xml;
-            
+
             var xs = document.createElement('xml');
             xs.onreadystatechange = change;
             xs[str.test(xslt) ? "innerHTML" : "src"] = xslt;
-            
+
             with (document.body) {
                 insertBefore(xm);
                 insertBefore(xs);
@@ -187,13 +215,15 @@ function Transformation() {
             var xs = {
                 readyState: 4
             };
-            var change = function() {
+            var change = function () {
                 if (xm.readyState == 4 && xs.readyState == 4 && !transformed) {
                     xmlDoc = xm.responseXML;
                     xsltDoc = xs.responseXML;
                     var resultDoc;
                     var processor = new XSLTProcessor();
-                                       
+
+                    
+
                     if (typeof processor.transformDocument == 'function') {
                         // obsolete Mozilla interface
                         resultDoc = document.implementation.createDocument("", "", null);
@@ -204,12 +234,20 @@ function Transformation() {
                     }
                     else {
                         processor.importStylesheet(xs.responseXML);
+                        
+                        if (paramName != ""  && paramValue != "") {
+
+                           // alert("ici:" +paramName);
+
+                            processor.setParameter(null,paramName,paramValue);
+    
+                        }
                         resultDoc = processor.transformToFragment(xm.responseXML, document);
                         callback(t);
                         document.getElementById(target).innerHTML = '';
                         document.getElementById(target).appendChild(resultDoc);
                     }
-                    
+
                     transformed = true;
                 }
             };
@@ -251,13 +289,13 @@ function browserSupportsXSLT() {
         support = true;
     }
     else if (window.XMLHttpRequest != undefined && window.XSLTProcessor != undefined) { // Mozilla 0.9.4+, Opera 9+
-       var processor = new XSLTProcessor();
-       if (typeof processor.transformDocument == 'function') {
-           support = window.XMLSerializer != undefined;
-       }
-       else {
-           support = true;
-       }
+        var processor = new XSLTProcessor();
+        if (typeof processor.transformDocument == 'function') {
+            support = window.XMLSerializer != undefined;
+        }
+        else {
+            support = true;
+        }
     }
     return support;
 }

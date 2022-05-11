@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf8"?>
+<data>
+
+    <exercice numero="1" niveau="1" obligatoire="false">
+        <nom>Structurer l’information</nom>
+        <titre>Exercice 1 : Structurer l’information (vers une grammaire de document)</titre>
+
+        <description>
+            <p>XML permet de structurer une information. Il est donc nécessaire, avant d'envisager d'utiliser ce format, de se familariser avec cette structuration. Le paragraphe suivant contient de l'information "en vrac".</p>
+            <p>Réorganisez-la de manière à mettre en évidence sa structure logique, sans forcément passer par une mise en forme XML.</p>
+        </description>
+
+        <question>
+            <row name="01">
+                <titre></titre>
+                <description>
+                    <p>Une bouteille d'eau Cristaline de 150 cl contient par litre 71 mg d'ions positifs calcium, et 5,5 mg d'ions positifs magnésium. On y trouve également des ions négatifs comme des chlorures à 20 mg par litre et des nitrates avec 1 mg par litre. Elle est recueillie à St-Cyr la Source, dans le département du Loiret. Son code barre est 3274080005003 et son pH est de 7,45. Comme la bouteille est sale, quelques autres matériaux comme du fer s'y trouvent en suspension.</p>
+                </description>
+            </row>
+            <row name="02">
+                <titre></titre>
+                <description>
+                    <p>Une seconde bouteille d'eau Cristaline a été, elle, recueillie à la source d'Aurèle dans les Alpes Maritimes. La concentration en ions calcium est de 98 mg/l, et en ions magnésium de 4 mg/l. Il y a 3,6 mg/l d'ions chlorure et 2 mg/l de nitrates, pour un pH de 7,4. Le code barre de cette bouteille de 50 cl est 3268840001008.</p>
+                </description>
+            </row>
+            <row name="03">
+                <titre></titre>
+                <description>
+                    <p>Une bouteille de même contenance est de marque Volvic, et a été puisée à... Volvic, bien connu pour ses sources donnant un pH neutre de 7. Elle comprend 11,5 mg/l d'ions calcium, 8,0 mg/l d'ions magnésium, 13,5 mg/l d'ions chlorures et 6,3 mg/l d'ions nitrates. Elle contient également des particules de silice. Son code barre est 3057640117008.</p>
+                    <p> PS : Volvic est dans le Puy-de-Dôme...</p>
+                </description>
+            </row>
+
+        </question>
+        <img>images/1484130461IMG_8715.JPG</img>
+    </exercice>
+    <exercice numero="3" niveau="3" obligatoire="true">
+        <nom>TEI</nom>
+        <titre>Exercice 3 : TEI</titre>
+        <description></description>
+        <question>
+            <row name="01">
+                <titre></titre>
+                <description></description>
+
+            </row>
+
+        </question>
+
+
+        <img>images/usa_photodisc_60329_xdr.jpg</img>
+
+    </exercice>
+    <exercice numero="4" niveau="2" obligatoire="false">
+        <nom>Funeral Blues…</nom>
+        <titre>Exercice 4 : Funeral Blues…</titre>
+        <question>
+            <row name="01">
+                <titre></titre>
+                <description></description>
+
+            </row>
+        </question>
+
+
+        <visuel>images/us_antelop02_dBRUNO.jpg</visuel>
+
+    </exercice>
+    <exercice numero="5" niveau="2" obligatoire="true">
+        <nom>DUCHN (xml)</nom>
+        <titre>Exercice 5 : DUCHN (xml)</titre>
+        <visuel>../images/france_fchif_traineaux218_c_migeon-r.jpg</visuel>
+
+        <description>
+            <p>Fichier de travail : duchn.xml (avec annotations morphosyntaxiques)</p>
+            <p>Le texte duch.xml contient le texte du Père Duchesne :</p>
+            <p>
+                <b>Le Père Duchesne</b>
+                est le titre de différents journaux qui ont paru sous plusieurs plumes durant la Révolution française. Le plus populaire était celui de Jacques-René Hébert, qui en a fait paraître 385 numéros de septembre 1790 jusqu’à onze jours avant sa mort à la guillotine, survenue le 4 germinal An II (24 mars 1794).
+            </p>
+
+        </description>
+        <question>
+
+            <row name="01">
+                <titre></titre>
+                <description>Définir une feuille de style dont le résultat est un document HTML et donnant à voir uniquement le texte. On essaiera de formater au mieux l’affichage  (séparer les mots… saut de ligne après paragraphe…)</description>
+
+            </row>
+
+            <row name="02">
+                <titre></titre>
+                <description>
+                    Définir une feuille de style dont le résultat est un document HTML et donnant à voir uniquement le texte en surlignant les mots dont le lemme est « aristocrate » ou « patriote »
+                    <br />
+                    <span>(stylage à définir par vous pour marquer le soulignement visé).</span>
+                </description>
+
+            </row>
+
+            <row name="03">
+                <titre></titre>
+                <description>Définir une feuille de style dont le résultat est un document TXT contenant la liste des mots contenant la séquence « citoy », puis la séquence « patriot » ; compter aussi la fréquence de chacun des mots</description>
+
+            </row>
+
+            <row name="04">
+                <titre></titre>
+                <description>Définir une feuille de style dont le résultat est un document TXT contenant la liste des catégories ; compter aussi la fréquence de chacune</description>
+
+            </row>
+
+            <row name="05">
+                <titre></titre>
+                <description>
+                    Définir une feuille de style permettant d’afficher le texte en surlignant les mots de catégories NOM ou ADJ
+                    <span>(stylage à définir par vous pour marquer le soulignement visé).</span>
+                </description>
+
+            </row>
+            <row name="06">
+                <titre></titre>
+                <description>Définir une feuille de style dont le résultat est un document TXT contenant la liste des séquences NOM ADJ</description>
+
+            </row>
+            <row name="07">
+                <titre></titre>
+                <description>Idem avec NOM PREP NOM</description>
+
+            </row>
+
+
+        </question>
+
+
+        <img></img>
+
+    </exercice>
+    <exercice numero="14" niveau="2" obligatoire="true">
+        <nom></nom>
+        <titre></titre>
+
+        <question>
+            <row name="01">
+                <titre></titre>
+                <description></description>
+
+            </row>
+            <row name="01">
+                <titre></titre>
+                <description></description>
+
+            </row>
+            <row name="01">
+                <titre></titre>
+                <description></description>
+
+            </row>
+            <row name="01">
+                <titre></titre>
+                <description></description>
+
+            </row>
+        </question>
+
+
+        <img></img>
+
+    </exercice>
+    <exercice numero="15" niveau="2" obligatoire="true">
+        <nom>Extraction dans les Fils RSS du Monde</nom>
+        <titre>Exercice 14 : Extraction dans les Fils RSS du Monde</titre>
+        <question>
+            <row name="01">
+                <titre></titre>
+                <description></description>
+
+            </row>
+            <row name="01">
+                <titre></titre>
+                <description></description>
+
+            </row>
+            <row name="01">
+                <titre></titre>
+                <description></description>
+
+            </row>
+            <row name="01">
+                <titre></titre>
+                <description></description>
+
+            </row>
+        </question>
+
+
+        <img></img>
+
+    </exercice>
+
+    <exercice v="19" niveau="2" obligatoire="true">
+        <nom></nom>
+        <titre></titre>
+        <question>
+            <row name="01">
+                <titre></titre>
+                <description></description>
+
+            </row>
+            <row name="01">
+                <titre></titre>
+                <description></description>
+
+            </row>
+            <row name="01">
+                <titre></titre>
+                <description></description>
+
+            </row>
+            <row name="01">
+                <titre></titre>
+                <description></description>
+
+            </row>
+        </question>
+
+
+        <img></img>
+
+    </exercice>
+</data>
