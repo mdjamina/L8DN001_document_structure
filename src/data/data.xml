@@ -37,11 +37,11 @@
     <exercice numero="3" niveau="3" obligatoire="true">
         <nom>TEI</nom>
         <titre>Exercice 3 : TEI</titre>
-        <description></description>
+        <description><p>créer un fichier XML/TEI à partir d’un document txt obtenu par océrisation du Dictionnaire universel (1690) d’Antoine Furetière</p></description>
         <question>
             <row name="01">
                 <titre></titre>
-                <description></description>
+                <description> "BOYAUTIER" et "BRASSER"</description>
 
             </row>
 
@@ -70,6 +70,7 @@
         <nom>DUCHN (xml)</nom>
         <titre>Exercice 5 : DUCHN (xml)</titre>
         <visuel>../images/france_fchif_traineaux218_c_migeon-r.jpg</visuel>
+        <download></download>
 
         <description>
             <p>Fichier de travail : duchn.xml (avec annotations morphosyntaxiques)</p>
@@ -137,10 +138,67 @@
 
     </exercice>
     <exercice numero="14" niveau="2" obligatoire="true">
-        <nom></nom>
-        <titre></titre>
+        <nom>Extraction dans les Fils RSS du Monde</nom>
+        <titre>EXERCICE 14 - Extraction dans les Fils RSS du Monde</titre>
+        <description>
+            <p><b>Partie 1</b> : Fichiers de travail : rubrique «A la Une» 2017 étiquetée avec treetagger</p>
+            <p>Ce fichier est disponible dans une archive sous iCampus : 3208-2017-v2.zip</p>
+            <p><b>Partie 2</b> : fichiers étiquetés avec udpipe dans le cours Projet Encadré</p>
+        </description>
 
         <question>
+            <row name="Partie 1.1">
+                <titre>XSLT</titre>
+                <description>Construire une feuille de styles pour afficher les contenus étiquetés avec TreeTagger</description>
+
+            </row>
+            <row name="Partie 1.2">
+                <titre>XSLT</titre>
+                <description>Construire des feuilles de style pour extraire (au format TXT) au moins 3 patrons morpho-
+                    syntaxiques (de longueurs différentes) sur les mêmes fichiers </description>
+
+            </row>
+            <row name="Partie 1.3">
+                <titre>XSLT</titre>
+                <description>Construire une feuille de styles pour afficher les contenus étiquetés avec TreeTagger en 
+                    mettant au jour un patron morphosyntaxique. </description>
+
+            </row>
+            <row name="Partie 1.1">
+                <titre>XQuery</titre>
+                <description>Construire une requête pour extraire les contenus textuels des titres </description>
+
+            </row>
+            <row name="Partie 1.2">
+                <titre>XQuery</titre>
+                <description>Construire une requête pour extraire les contenus textuels des descriptions </description>
+
+            </row>
+            <row name="Partie 1.3">
+                <titre>XQuery</titre>
+                <description>Construire une requête pour extraire les contenus textuels des titres ET des descriptions</description>
+
+            </row>
+            <row name="Partie 1.4">
+                <titre>XQuery</titre>
+                <description>Construire une requête pour extraire les patrons morpho-syntaxiques NOM ADJ</description>
+
+            </row>
+            <row name="Partie 1.5">
+                <titre>XQuery</titre>
+                <description>Construire une requête pour extraire les patrons morpho-syntaxiques NOM PRP NOM</description>
+
+            </row>
+            <row name="01">
+                <titre></titre>
+                <description></description>
+
+            </row>
+            <row name="01">
+                <titre></titre>
+                <description></description>
+
+            </row>
             <row name="01">
                 <titre></titre>
                 <description></description>
