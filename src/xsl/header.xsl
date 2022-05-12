@@ -24,7 +24,7 @@
 
 
 										<xsl:element name="a">
-											<xsl:attribute name="href"></xsl:attribute>
+											<xsl:attribute name="href">pages/exercice.html?numero=<xsl:value-of select="@numero"/></xsl:attribute>
 											<xsl:attribute name="title"><xsl:value-of
 												select="name" /></xsl:attribute>
 											<xsl:attribute name="class">portfolio-link mega-menu-item</xsl:attribute>
