@@ -36,6 +36,13 @@ const myParam = urlParams.get('numero');
 		loadTransformationWithParam("../data/data.xml", "../xsl/exercice.xsl", "exercicediv","numero",myParam);
 	 }
 
+
+	 function make(e){
+  //alert("inside onclick");
+  alert(myParam);
+ // window.location = "http://www.google.com";
+}
+
 	//window.onload = loadXsltFiles;
 </script>
 
@@ -51,8 +58,8 @@ const myParam = urlParams.get('numero');
 		<div class="midbar">
 			<div class="container">
 				<div class="row">
-					<a href="index.html" title="" id="top"
-						class="col-xs-5 col-sm-3"> <img src="images/logo-h-v2.png"
+					<a href="../index.html" title="" id="top"
+						class="col-xs-5 col-sm-3"> <img src="../images/logo-h-v2.png"
 						alt="" title=""
 						class="img-responsive">
 					</a>

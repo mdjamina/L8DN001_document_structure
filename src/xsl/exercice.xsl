@@ -44,7 +44,7 @@
 			</section>
 
 
-			<section id="resume" itemscope="" itemtype="https://schema.org/product">
+			<section id="resume" itemscope="">
 				<div class="container">
 					<div class="row">
 						<div class="infos col-xs-12 col-sm-8">
@@ -80,7 +80,7 @@
 		</div>
 	</section>
 
-	<section id="productMain">
+	<section id="exerciceMain">
 		<div class="container">
 			<div class="row">
 				<div class="productContent col-xs-12 col-sm-8">
@@ -92,7 +92,7 @@
 									<h3>L'Exercice</h3>
 								</li>
 								<li class="Fl hidden-xs">
-									<a title="products" href="#program" class="scroll">products</a>
+									<a title="questions" href="#program" class="scroll">questions</a>
 								</li>
 
 
@@ -100,40 +100,24 @@
 						</nav>
 						<div></div>
 						<div class="content" itemprop="description">
-							<h3>Détails de l'exercice "<xsl:value-of select="titre" />
-"</h3>
+							<h3>Détails de l'exercice "<xsl:value-of select="titre" />"</h3>
 							<div class="more" style="max-height: none;">
 								<xsl:for-each select="description/p">
-									<p>
-											•										<xsl:value-of select="current()" />
-									</p>
+									<p>• <xsl:value-of select="current()" /></p>
 								</xsl:for-each>
 							</div>
 							<div class="clear"></div>
 						</div>
 
-						<!-- Infos supplementaire sur le voyage -->
+						<!-- Infos supplementaire  -->
 						<ul id="infosSupp" class="row">
 							<li class="col-xs-12 col-sm-3">
-								<h5>Groupe</h5>
+
+								<a title="L'exercice" href="../exercices/{$numero}.zip" class="scroll" download="solution_exo{$numero}.zip"><h5>Téléchargement</h5></a>
+								
 								<xsl:value-of select="produit/Groupe" />
 							</li>
-							<li class="col-xs-12 col-sm-3">
-								<h5>Vol</h5>
-								<xsl:value-of select="produit/Vol" />
-							</li>
-							<li class="col-xs-12 col-sm-3">
-								<h5>Déplacement</h5>
-								<xsl:value-of select="produit/Deplacement" />
-							</li>
-							<li class="col-xs-12 col-sm-3">
-								<h5>Hébergement</h5>
-								<xsl:value-of select="produit/Hebergement" />
-							</li>
-							<li class="col-xs-12 col-sm-3">
-								<h5>Encadrement</h5>
-								<xsl:value-of select="produit/Encadrement" />
-							</li>
+							
 						</ul>
 						<!-- / info supp -->
 
@@ -144,10 +128,10 @@
 						<nav>
 							<ul class="row">
 								<li class="Fl hidden-xs">
-									<a title="Le voyage" href="#product" class="scroll">Le voyage</a>
+									<a title="L'exercice" href="#product" class="scroll">L'exercice</a>
 								</li>
 								<li class="Fl">
-									<h3>products</h3>
+									<h3>Questions</h3>
 								</li>
 							</ul>
 						</nav>
@@ -160,24 +144,10 @@
 											<xsl:value-of select="@name"/>
 										</h5>
 										<span></span>
-										<ul class="dayDetails">
-											<xsl:for-each select="dayDetails">
-												<xsl:element name="li">
-													<xsl:attribute name="class">
-														<xsl:value-of select="@class" />
-													</xsl:attribute>
-													<xsl:value-of select="current()" />
-												</xsl:element>
-											</xsl:for-each>
 
-										</ul>
 
 									</aside>
 									<div class="dayPrgm col-xs-12 col-sm-9">
-
-
-
-
 
 										<h4>
 											<xsl:value-of select="titre" />
@@ -194,21 +164,7 @@
 							</xsl:for-each>
 
 
-							<div class="visible-xs clear">
-								<!-- SUR MESURE -->
-								<!-- CARTE -->
-								<figure id="map">
-									<xsl:element name="img">
-										<xsl:attribute name="src">
-											<xsl:value-of select="map" />
-										</xsl:attribute>
-										<xsl:attribute name="class">img-responsive</xsl:attribute>
-										<xsl:attribute name="title">Itinéraire du voyage</xsl:attribute>
-									</xsl:element>
-
-
-								</figure>
-							</div>
+		
 						</div>
 					</div>
 					<!-- /onglet 2 -->
@@ -216,68 +172,7 @@
 
 					<!-- onglet 4 -->
 				</div>
-				<aside class="productAction hidden-xs col-sm-4">
-					<!-- PROMOS / RESATOT -->
-					<div id="tripInfos">
-						<div id="tripPromotion">
-							<div class="row">
-								<div class="col-xs-6"></div>
-								<div class="col-xs-6"></div>
-							</div>
-						</div>
-
-						<!-- INFOS VOYAGE -->
-						<p>
-							<span>Voyage :</span>
-							<xsl:value-of select="Voyage"/>
-						</p>
-						<p>
-							<span>Style :</span>
-							<xsl:value-of select="Style"/>
-						</p>
-						<p>
-							<span>Enfants :</span>
-							<xsl:value-of select="Enfants"/>
-						</p>
-						<!-- ACTIVITES -->
-						<p>
-							<span>Activités &amp; Thématiques :</span>
-
-							<xsl:for-each select="activite">
-								<xsl:value-of select="current()"/>
--
-							</xsl:for-each>
-
-						</p>
-						<p>
-							<span>Temps d'activités :</span>
-							<xsl:value-of select="tempsActivites"/>
-						</p>
-
-						<!-- NIVEAU TECHNIQUE -->
-						<!-- AVIS DESTIS -->
-
-					</div>
-
-
-
-					<!-- SUR MESURE -->
-					<!-- CARTE -->
-					<figure id="map">
-
-						<xsl:element name="img">
-							<xsl:attribute name="src">
-								<xsl:value-of select="map" />
-							</xsl:attribute>
-							<xsl:attribute name="class">img-responsive</xsl:attribute>
-							<xsl:attribute name="title">Itinéraire du voyage</xsl:attribute>
-						</xsl:element>
-
-
-
-					</figure>
-				</aside>
-			</div>
+		</div>
 		</div>
 	</section>
 

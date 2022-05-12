@@ -4145,7 +4145,7 @@ article.produitColonne p.codepack {
 	margin: 0 auto;
 }
 
-#productMain .productContent .content .blocGuide p {
+#exerciceMain .productContent .content .blocGuide p {
 	background: rgba(104, 94, 85, 0.6);
 	bottom: 10px;
 	border: 1px solid #fff;
@@ -5289,13 +5289,13 @@ span.note50 {
 
 /*** Fiche produit extension ***/
 /*** ITEM PRODUIT LISTE ***/
-#productMain .exerciceList {
+#exerciceMain .exerciceList {
 	border-top: 1px dashed #c4b17d;
 	margin: 0 0 35px 0;
 	padding: 0;
 }
 
-#productMain .exerciceList h2 a {
+#exerciceMain .exerciceList h2 a {
 	background: url(../images/pictos/arrow.png) no-repeat left 7px;
 	color: #685e55;
 	display: block;
@@ -5305,7 +5305,7 @@ span.note50 {
 	text-transform: uppercase;
 }
 
-#productMain .exerciceList aside {
+#exerciceMain .exerciceList aside {
 	margin: 0 0 20px 0;
 	padding: 5px;
 	-moz-box-shadow: 0px 0px 5px 0px #656565;
@@ -5316,18 +5316,18 @@ span.note50 {
 		Direction=NaN, Strength=5);
 }
 
-#productMain .exerciceList aside figure {
+#exerciceMain .exerciceList aside figure {
 	margin: 0 0 5px 0;
 }
 
-#productMain .exerciceList aside .pays {
+#exerciceMain .exerciceList aside .pays {
 	background: url(../images/pictos/map.png) no-repeat 5px center;
 	color: #685e55;
 	font: 1.4rem "Maven Pro";
 	padding: 0 0 0 25px;
 }
 
-#productMain .productContent {
+#exerciceMain .productContent {
 	color: #685e55;
 	font: normal 1.4rem/1.8rem Arvo;
 }
@@ -5336,7 +5336,7 @@ span.note50 {
 	
 }
 
-#productMain .productContent .label_nouveau {
+#exerciceMain .productContent .label_nouveau {
 	background: #2b7585;
 	color: #fff;
 	display: inline-block;
@@ -5346,7 +5346,7 @@ span.note50 {
 	text-transform: capitalize;
 }
 
-#productMain .productContent .avisClientsTeaser {
+#exerciceMain .productContent .avisClientsTeaser {
 	background: #244359;
 	color: #fff;
 	display: inline-block;
@@ -5355,15 +5355,15 @@ span.note50 {
 	padding: 0 20px;
 }
 
-#productMain .productContent .avisClientsTeaser a {
+#exerciceMain .productContent .avisClientsTeaser a {
 	color: #fff;
 }
 
-#productMain .productContent .avisClientsTeaser em {
+#exerciceMain .productContent .avisClientsTeaser em {
 	font-style: normal;
 }
 
-#productMain .productContent .avisClientsTeaser span {
+#exerciceMain .productContent .avisClientsTeaser span {
 	display: inline-block;
 	height: 18px;
 	margin: 0 0 0 5px;
@@ -5414,7 +5414,7 @@ span.note50 {
 	background: url(../images/pictos/note.png) no-repeat center -201px;
 }
 
-#productMain .productContent .ajoutSelection, #productMain .productContent .productContent .retraitSelection
+#exerciceMain .productContent .ajoutSelection, #exerciceMain .productContent .productContent .retraitSelection
 	{
 	color: #fff;
 	line-height: 30px;
@@ -5422,15 +5422,15 @@ span.note50 {
 	text-transform: uppercase;
 }
 
-#productMain .productContent .ajoutSelection {
+#exerciceMain .productContent .ajoutSelection {
 	background: #c4b17d;
 }
 
-#productMain .productContent .retraitSelection {
+#exerciceMain .productContent .retraitSelection {
 	background: #c4b17d;
 }
 
-#productMain .productContent .pdf {
+#exerciceMain .productContent .pdf {
 	background: url(../images/pictos/pdf.png) no-repeat left center;
 	color: #685e55;
 	display: block;
@@ -5440,7 +5440,7 @@ span.note50 {
 	padding: 0 0 0 25px;
 }
 
-#productMain .productContent .content p {
+#exerciceMain .productContent .content p {
 	margin: 0;
 }
 
@@ -5452,11 +5452,11 @@ span.note50 {
 	display: block;
 }
 
-#productMain .productContent .guide {
+#exerciceMain .productContent .guide {
 	padding: 20px 0;
 }
 
-#productMain .productContent .guide figure {
+#exerciceMain .productContent .guide figure {
 	background: #f3efe4;
 	border-radius: 200px;
 	display: block;
@@ -5465,23 +5465,23 @@ span.note50 {
 	padding: 0;
 }
 
-#productMain .productContent .guide p {
+#exerciceMain .productContent .guide p {
 	color: #685e55;
 	font: normal 1.4rem "Maven Pro";
 	margin: 0;
 }
 
-#productMain .productContent .guide p strong {
+#exerciceMain .productContent .guide p strong {
 	display: block;
 	font-size: 24px;
 	margin: 0;
 }
 
-#productMain .productInfos {
+#exerciceMain .productInfos {
 	display: none;
 }
 
-#productMain .productInfos p {
+#exerciceMain .productInfos p {
 	margin: 0;
 	padding: 0;
 }
@@ -5494,7 +5494,7 @@ span.note50 {
 	
 }
 
-#productMain .popupLevel {
+#exerciceMain .popupLevel {
 	background: #fff;
 	border: 1px solid #726B63;
 	color: #685e55;
@@ -5507,7 +5507,7 @@ span.note50 {
 	display: none;
 }
 
-#productMain .popupLevel span {
+#exerciceMain .popupLevel span {
 	display: block;
 }
 
@@ -5519,16 +5519,16 @@ span.note50 {
 	
 }
 
-#productMain .productAction {
+#exerciceMain .productAction {
 	padding: 10px;
 }
 
-#productMain .productAction p {
+#exerciceMain .productAction p {
 	margin: 0;
 	padding: 0;
 }
 
-#productMain .productAction .promo {
+#exerciceMain .productAction .promo {
 	background: #c4b17d;
 	color: #fff;
 	font: normal 1.4rem/3rem Arvo;
@@ -5536,22 +5536,22 @@ span.note50 {
 	text-transform: uppercase;
 }
 
-#productMain .productAction .prix {
+#exerciceMain .productAction .prix {
 	color: #685e55;
 	font: bold 3.6rem/4rem "Maven Pro";
 }
 
-#productMain .productAction .startDate {
+#exerciceMain .productAction .startDate {
 	color: #685e55;
 	font: 500 1.6rem/1.8rem "Maven Pro";
 }
 
-#productMain .productAction .duration {
+#exerciceMain .productAction .duration {
 	color: #c4b17d;
 	font: 500 1.6rem/1.8rem "Maven Pro";
 }
 
-#productMain .productAction .btn {
+#exerciceMain .productAction .btn {
 	background: #8d193a;
 	border: 2px solid #c4b17d;
 	color: #fff;
@@ -5561,11 +5561,11 @@ span.note50 {
 }
 
 /*** ASIDE PRODUIT ***/
-#productMain aside.productAction {
+#exerciceMain aside.productAction {
 	padding: 0;
 }
 
-#productMain .productAction #tripInfos, #tripInfosMobile {
+#exerciceMain .productAction #tripInfos, #tripInfosMobile {
 	background: #f3efe4;
 	color: #685e55;
 	font: 1.4rem "Maven Pro";
@@ -5573,18 +5573,18 @@ span.note50 {
 	text-transform: uppercase;
 }
 
-#productMain .productAction #tripInfos #tripPromotion p,
+#exerciceMain .productAction #tripInfos #tripPromotion p,
 	#tripInfosMobile #tripPromotion p {
 	background: none;
 	color: #8d193a;
 	padding: 0;
 }
 
-#productMain .productAction #tripInfos #tripPromotion p.first {
+#exerciceMain .productAction #tripInfos #tripPromotion p.first {
 	
 }
 
-#productMain .productAction #tripInfos #tripPromotion p span,
+#exerciceMain .productAction #tripInfos #tripPromotion p span,
 	#tripInfosMobile #tripPromotion p span {
 	background: none;
 	color: #8d193a;
@@ -5592,7 +5592,7 @@ span.note50 {
 	padding: 0;
 }
 
-#productMain .productAction #infoProgrammation {
+#exerciceMain .productAction #infoProgrammation {
 	background: #c1ad76;
 	border: 2px solid #685e55;
 	color: #685e55;
@@ -5601,25 +5601,25 @@ span.note50 {
 	padding: 10px
 }
 
-#productMain .productAction #infoProgrammation strong, #productMain .productAction #infoProgrammation a,
-	#productMain .productAction #infoProgrammation a:hover {
+#exerciceMain .productAction #infoProgrammation strong, #exerciceMain .productAction #infoProgrammation a,
+	#exerciceMain .productAction #infoProgrammation a:hover {
 	color: #f3efe4
 }
 
-#productMain .productAction #tripInfos p, #tripInfosMobile p {
+#exerciceMain .productAction #tripInfos p, #tripInfosMobile p {
 	background: url(../images/pictos/arrow.png) no-repeat left 3px;
 	margin: 0 0 15px 0;
 	padding: 0 0 0 42px;
 }
 
-#productMain .productAction #tripInfos p span, #tripInfosMobile p span {
+#exerciceMain .productAction #tripInfos p span, #tripInfosMobile p span {
 	color: #c1ad76;
 	display: block;
 	font: 1.4rem Arvo;
 	padding: 0 5px 0 0
 }
 
-#productMain .productAction .webcallback, #tripInfosMobile .webcallback
+#exerciceMain .productAction .webcallback, #tripInfosMobile .webcallback
 	{
 	background: #c1ad76 url(../images/pictos/phone.png) no-repeat 63px center;
 	color: #fff;
@@ -5630,12 +5630,12 @@ span.note50 {
 	text-transform: uppercase;
 }
 
-#productMain .productAction .webcallback span, #tripInfosMobile .webcallback span
+#exerciceMain .productAction .webcallback span, #tripInfosMobile .webcallback span
 	{
 	font: bold 36px "Maven Pro";
 }
 
-#productMain .checkout, #tripInfosMobile .checkout {
+#exerciceMain .checkout, #tripInfosMobile .checkout {
 	background: #8d193a;
 	border: 2px solid #c4b17d;
 	color: #fff;
@@ -5650,7 +5650,7 @@ span.note50 {
 	text-transform: uppercase;
 }
 
-#productMain .checkout:hover, #tripInfosMobile .checkout:hover {
+#exerciceMain .checkout:hover, #tripInfosMobile .checkout:hover {
 	border-radius: 5px;
 	background: rgb(255, 255, 255);
 	background: -moz-linear-gradient(top, rgba(255, 255, 255, 1) 0%,
@@ -5673,9 +5673,9 @@ span.note50 {
 	text-shadow: none;
 }
 
-/*#productMain .sm:hover{background:#244359 url(../images/pictos/pictos-cta-produit.png) no-repeat 25px -71px;border:2px solid #2b7585;color:#fff;display:block;font:bold 2.4rem/3rem "Maven Pro";padding:17px 0 17px 65px;text-align:left;text-decoration:none;text-transform:uppercase;}
-		#productMain .sm:hover span{color:#5faebf;}*/
-#productMain .sm {
+/*#exerciceMain .sm:hover{background:#244359 url(../images/pictos/pictos-cta-produit.png) no-repeat 25px -71px;border:2px solid #2b7585;color:#fff;display:block;font:bold 2.4rem/3rem "Maven Pro";padding:17px 0 17px 65px;text-align:left;text-decoration:none;text-transform:uppercase;}
+		#exerciceMain .sm:hover span{color:#5faebf;}*/
+#exerciceMain .sm {
 	background: #FF8000 url(../images/pictos/pictos-cta-produit.png) no-repeat
 		20px -64px;
 	border-radius: 5px;
@@ -5690,19 +5690,19 @@ span.note50 {
 	text-shadow: 0 2px 2px rgba(0, 0, 0, 0.8);
 }
 
-#productMain .sm span {
+#exerciceMain .sm span {
 	color: #fff;
 	display: block;
 }
 
-#productMain .vp:hover, #productMain .sm:hover {
+#exerciceMain .vp:hover, #exerciceMain .sm:hover {
 	background: #28af4e url(../images/pictos/pictos-cta-produit.png) no-repeat
 		20px -64px;
 	color: #fff;
 	text-decoration: none;
 }
 
-#productMain .productAction .devis {
+#exerciceMain .productAction .devis {
 	color: #a29b90;
 	font: 1.8rem Arvo;
 	margin: 15px 0 0 0;

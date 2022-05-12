@@ -10,7 +10,7 @@
 							<header>
 								<h2 itemprop="name">
 								<xsl:element name="a">
-									<xsl:attribute name="href">exo<xsl:value-of select="@numero"/>.html</xsl:attribute>
+									<xsl:attribute name="href">exercice.html?numero=<xsl:value-of select="@numero"/></xsl:attribute>
 									<xsl:attribute name="title"><xsl:value-of select="titre"/></xsl:attribute>
 									<xsl:attribute name="itemprop">url</xsl:attribute>
 									<xsl:value-of select="titre"/>
@@ -21,7 +21,7 @@
 							<aside class="col-xs-12 col-sm-12 col-md-4">
 								<figure>
 									<xsl:element name="a">
-										<xsl:attribute name="href">exo<xsl:value-of select="@numero"/>.html</xsl:attribute>
+										<xsl:attribute name="href">exercice.html?numero=<xsl:value-of select="@numero"/></xsl:attribute>
 										<xsl:attribute name="title"><xsl:value-of select="titre"/></xsl:attribute>
 										<xsl:attribute name="itemprop">url</xsl:attribute>
 										<xsl:attribute name="class">vignetteProduit</xsl:attribute>
@@ -67,7 +67,7 @@
 									
 								</div>
 								<xsl:element name="a">
-										<xsl:attribute name="href"><xsl:value-of select="@code"/>.html</xsl:attribute>
+										<xsl:attribute name="href">exercice.html?numero=<xsl:value-of select="@numero"/></xsl:attribute>
 										<xsl:attribute name="title">Voir l'exercice - <xsl:value-of select="titre"/></xsl:attribute>
 										
 										<xsl:attribute name="class">btn rounded10 col-xs-12 col-sm-3</xsl:attribute>
