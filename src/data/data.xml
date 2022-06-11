@@ -34,6 +34,7 @@
         </question>
         <img>images/1484130461IMG_8715.JPG</img>
     </exercice>
+
     <exercice numero="3" niveau="3" obligatoire="true">
         <nom>TEI</nom>
         <titre>Exercice 3 : TEI</titre>
@@ -51,6 +52,7 @@
         <img>images/usa_photodisc_60329_xdr.jpg</img>
 
     </exercice>
+
     <exercice numero="4" niveau="2" obligatoire="false">
         <nom>Funeral Blues…</nom>
         <titre>Exercice 4 : Funeral Blues…</titre>
@@ -66,6 +68,7 @@
         <visuel>images/us_antelop02_dBRUNO.jpg</visuel>
 
     </exercice>
+
     <exercice numero="5" niveau="2" obligatoire="true">
         <nom>DUCHN (xml)</nom>
         <titre>Exercice 5 : DUCHN (xml)</titre>
@@ -137,6 +140,7 @@
         <img></img>
 
     </exercice>
+
     <exercice numero="14" niveau="2" obligatoire="true">
         <nom>Extraction dans les Fils RSS du Monde</nom>
         <titre>EXERCICE 14 - Extraction dans les Fils RSS du Monde</titre>
@@ -189,32 +193,37 @@
                 <description>Construire une requête pour extraire les patrons morpho-syntaxiques NOM PRP NOM</description>
 
             </row>
-            <row name="01">
+            <row name="Partie 2.1">
                 <titre></titre>
                 <description></description>
 
             </row>
-            <row name="01">
+            <row name="Partie 2.2">
                 <titre></titre>
                 <description></description>
 
             </row>
-            <row name="01">
+            <row name="Partie 2.3">
                 <titre></titre>
                 <description></description>
 
             </row>
-            <row name="01">
+            <row name="Partie 2.4">
                 <titre></titre>
                 <description></description>
 
             </row>
-            <row name="01">
+            <row name="Partie 2.5">
                 <titre></titre>
                 <description></description>
 
             </row>
-            <row name="01">
+            <row name="Partie 2.6">
+                <titre></titre>
+                <description></description>
+
+            </row>
+            <row name="Partie 2.7">
                 <titre></titre>
                 <description></description>
 
@@ -225,30 +234,60 @@
         <img></img>
 
     </exercice>
+
     <exercice numero="15" niveau="2" obligatoire="true">
-        <nom>Extraction dans les Fils RSS du Monde</nom>
-        <titre>Exercice 14 : Extraction dans les Fils RSS du Monde</titre>
+        <nom>Patrons morphosyntaxiques / Relations de dépendance sur la Base TrameurFromRhapsodie</nom>
+        <titre>EXERCICE 15 - Patrons morphosyntaxiques / Relations de dépendance sur la Base TrameurFromRhapsodie</titre>
         <question>
             <row name="01">
-                <titre></titre>
-                <description></description>
+                <titre>Question 1: XSLT</titre>
+                <description>Construire une feuille de styles pour afficher uniquement le texte (sortie TXT)</description>
 
             </row>
-            <row name="01">
-                <titre></titre>
-                <description></description>
+            <row name="02">
+                <titre>Question 2</titre>
+                <description><p>Construire une feuille de styles pour afficher (au format HTML) le texte en insérant sur chaque item sa POS</p>
+                    <p>Cet exercice a été effectué sur l'échantillon fournit sur iCampus de la base TrameurFromRhapsodie.</p></description>
 
             </row>
-            <row name="01">
-                <titre></titre>
-                <description></description>
+            <row name="03">
+                <titre>Question 3</titre>
+                <description>Construire une feuille de styles pour extraire (en format TXT) au moins 2 patrons morpho-syntaxiques de longueurs différentes
+                    <br/>les patrons  choisis: NOM-NOM et NOM-VERBE-ADJECTIF</description>
 
             </row>
-            <row name="01">
-                <titre></titre>
-                <description></description>
+            <row name="04">
+                <titre>Question 4</titre>
+                <description>Construire une feuille de styles pour extraire (au format TXT) les items en relation de dépendance syntaxique de type SUJET (les classer et les compter)
+                    <br/>
+                    Cet exercice a également été effectué sur l'échantillon fournit sur iCampus de la base TrameurFromRhapsodie. <br/>Le classement et le comptage ont été fait en ligne de commande : xsltproc Q4.xsl ../baseTrameurFromRhapsodie-echantillon.xml | sort | uniq -c | sort -nr > Q4.txt</description>
 
             </row>
+            <row name="05">
+                <titre>Question 5</titre>
+                <description>Construire une feuille de styles pour extraire la liste des POS en relation de dépendance syntaxique de type SUJET (les classer et les compter)
+                    <br/>
+                    Ici aussi, le classement et le comptage ont été fait en ligne de commande : xsltproc Q5.xsl ../baseTrameurFromRhapsodie-echantillon.xml | sort | uniq -c | sort -nr > Q5.txt</description>
+
+            </row>
+            <row name="06">
+                <titre>Question 6 - Question subsidiaire</titre>
+                <description>Construire une feuille de styles pour afficher (au format HTML) tout le texte de la base en mettant au jour une relation de dépendance syntaxique choisie (par exemple OBJ) : l’affichage doit mettre au jour le dépendant et le gouverneur
+                    <br/>
+                    La relation de dépendance syntaxique que j'ai choisi est la relation SUB (sujet).</description>
+
+            </row>
+            <row name="07">
+                <titre>Question 7 - XQuery</titre>
+                <description>Construire une requête pour extraire les items portant une relation de dépendance syntaxique de type OBJ</description>
+
+            </row>
+            <row name="08">
+                <titre>Question 8</titre>
+                <description>Construire une requête pour extraire les items en relation de dépendance syntaxique de type OBJ (on affichera les formes ou les lemmes connectés par cette relation)</description>
+
+            </row>
+
         </question>
 
 
@@ -256,28 +295,37 @@
 
     </exercice>
 
-    <exercice v="19" niveau="2" obligatoire="true">
-        <nom></nom>
-        <titre></titre>
+    <exercice numero="19" niveau="2" obligatoire="true">
+        <nom>Ulysse pour finir</nom>
+        <titre>EXERCICE 19 - Ulysse pour finir</titre>
         <question>
             <row name="01">
-                <titre></titre>
-                <description></description>
+                <titre>Question 1</titre>
+                <description>Ecrire une feuille de styles XSLT pour extraire uniquement le volet anglais de cet alignement (au format txt)</description>
 
             </row>
-            <row name="01">
-                <titre></titre>
-                <description></description>
+            <row name="02">
+                <titre>Question 2</titre>
+                <description>Ecrire une feuille de styles XSLT pour extraire uniquement le volet français de cet alignement (au format txt)</description>
 
             </row>
-            <row name="01">
-                <titre></titre>
-                <description></description>
+            <row name="03">
+                <titre>Question 3</titre>
+                <description>A partir des commandes précédentes, écrire une « commande » pour compter le nombre de mots dans chacun des 2 volets de cet alignement<br/>
+
+                    Je n'ai pas réussi à compter le nombre de mots dans chacun des 2 volets avec une feuille de style et des expressions XPath. J'ai seulement réussi à afficher le nombre de mots par balise mais étant donné qu'il n'est pas possible d'additionner des variables, il n'était pas possible d'utiliser cette information pour compter le nombre total de mots par volet. J'ai donc utilisé une commande bash pour compter le nombre de mot : wc -w mais le résultat n'est pas le même que sur cotEditor (éditeur). J'ai donc essayé d'enlever la ponctuation avec la commande : sed -e 's/[?!.,:…()—;]//g' 19_1.txt | wc -w mais le résultat n'est toujours pas le même.</description>
 
             </row>
-            <row name="01">
-                <titre></titre>
-                <description></description>
+            <row name="04">
+                <titre>Question 4</titre>
+                <description>Après avoir choisi un "mot" anglais ou français, écrire une feuille de styles XSLT pour extraire tous les bi-contextes contenant ce mot (le contexte contenant le mot choisi et sa traduction). Faire une sortie HTML dans laquelle le mot choisi initialement est mis en valeur « graphiquement »
+
+                    J'ai choisi le mot "sun".</description>
+
+            </row>
+            <row name="05">
+                <titre>Question 5 - XQUERY</titre>
+                <description>Après avoir choisi un « mot » anglais ou français, écrire une requête pour extraire tous les bi- contextes contenant ce mot (le contexte contenant le mot choisi et sa traduction)</description>
 
             </row>
         </question>

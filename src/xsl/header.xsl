@@ -24,7 +24,7 @@
 
 
 										<xsl:element name="a">
-											<xsl:attribute name="href">pages/exercice.html?numero=<xsl:value-of select="@numero"/></xsl:attribute>
+											<xsl:attribute name="href">/pages/exercice.html?numero=<xsl:value-of select="@numero"/></xsl:attribute>
 											<xsl:attribute name="title"><xsl:value-of
 												select="name" /></xsl:attribute>
 											<xsl:attribute name="class">portfolio-link mega-menu-item</xsl:attribute>
@@ -56,7 +56,7 @@
 									</div>
 								</xsl:for-each>
 								<div class="mm-item link col-xs-12 col-sm-2">
-									<a href="pages/all.html" class="portfolio-link mega-menu-item"
+									<a href="../pages/all.html" class="portfolio-link mega-menu-item"
 										data-toggle="modal">
 										Voir tous les exercices
 									</a>
