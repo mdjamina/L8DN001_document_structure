@@ -13,7 +13,7 @@
 					<article>
 
 						<xsl:element name="a">
-							<xsl:attribute name="href">exercice.html?numero=<xsl:value-of select="@numero"/></xsl:attribute>
+							<xsl:attribute name="href">/pages/exercice.html?numero=<xsl:value-of select="@numero"/></xsl:attribute>
 							<xsl:attribute name="class">product-link</xsl:attribute>
 							<figure>
 								<xsl:element name="img">
