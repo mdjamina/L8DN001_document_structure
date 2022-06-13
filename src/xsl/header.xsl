@@ -24,7 +24,7 @@
 
 
 										<xsl:element name="a">
-											<xsl:attribute name="href">/pages/exercice.html?numero=<xsl:value-of select="@numero"/></xsl:attribute>
+											<xsl:attribute name="href">../pages/exercice.html?numero=<xsl:value-of select="@numero"/></xsl:attribute>
 											<xsl:attribute name="title"><xsl:value-of
 												select="name" /></xsl:attribute>
 											<xsl:attribute name="class">portfolio-link mega-menu-item</xsl:attribute>
@@ -43,8 +43,7 @@
 												</div>
 											</div>
 											<xsl:element name="img">
-												<xsl:attribute name="src"><xsl:value-of
-													select="img" /></xsl:attribute>
+												<xsl:attribute name="src">../images/exo<xsl:value-of select="@numero"/>.png</xsl:attribute>
 												<xsl:attribute name="class">img-responsive lazy</xsl:attribute>
 												<xsl:attribute name="alt"><xsl:value-of
 													select="name" /></xsl:attribute>

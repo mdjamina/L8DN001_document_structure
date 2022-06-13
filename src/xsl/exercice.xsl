@@ -29,7 +29,7 @@
 									<div class="rsContent" style="visibility: visible; opacity: 1;">
 										<xsl:element name="img">
 											<xsl:attribute name="src">
-												<xsl:value-of select="visuel" />
+												../images/exo<xsl:value-of select="@numero"/>.png
 											</xsl:attribute>
 											<xsl:attribute name="class">rsImg rsMainSlideImage</xsl:attribute>
 											<xsl:attribute name="style">width: 578px; height: 384px; margin-left: 0px; margin-top: -30px;</xsl:attribute>
@@ -50,7 +50,7 @@
 						<div class="infos col-xs-12 col-sm-8">
 							<!-- TITRE -->
 							<h1 itemprop="name">
-								<xsl:value-of select="pays" />
+								
  -								<xsl:value-of select="titre" />
 							</h1>
 
@@ -58,11 +58,7 @@
 						<div class="infosRight col-xs-12 col-sm-4">
 
 							<div class="col-xs-6">
-								<!-- DUREE -->
-								<p class="duration">durée<span>
-									<xsl:value-of select="duree" />
-								</span>
-							</p>
+
 							<!-- NIVEAU -->
 							<xsl:element name="div">
 								<xsl:attribute name="id">infoLevel</xsl:attribute>

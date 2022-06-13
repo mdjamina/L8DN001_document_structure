@@ -26,7 +26,7 @@
 										<xsl:attribute name="itemprop">url</xsl:attribute>
 										<xsl:attribute name="class">vignetteProduit</xsl:attribute>
 										<xsl:element name="img">
-											<xsl:attribute name="src"><xsl:value-of select="visuel"/></xsl:attribute>
+											<xsl:attribute name="src">../images/exo<xsl:value-of select="@numero"/>.png</xsl:attribute>
 											<xsl:attribute name="class">img-responsive</xsl:attribute>
 											<xsl:attribute name="itemprop">image</xsl:attribute>
 											<xsl:attribute name="title"><xsl:value-of select="titre"/></xsl:attribute>
@@ -34,7 +34,7 @@
 									</xsl:element>
 									
 								</figure>
-								<strong class="pays"><xsl:value-of select="pays"/></strong>
+							
 							</aside>
 							<div class="productContent col-xs-12 col-sm-12 col-md-8">
 	
@@ -52,13 +52,9 @@
 							<div class="productInfos col-sm-12 text-center">
 
 
-								<p class="level col-sm-3 text-center">
-									<img src="../images/pictos/blason.png"/> Niveau <xsl:value-of select="@niveau" />
-								</p>
+
 								
-								<p class="productType col-sm-3 text-center">
-									<img src="../images/pictos/eclair.png"/> <xsl:value-of select="activite" />
-								</p>
+	
 								
 							</div>
 							<div class="productAction col-sm-12">
@@ -72,6 +68,14 @@
 										
 										<xsl:attribute name="class">btn rounded10 col-xs-12 col-sm-3</xsl:attribute>
 										Voir l'exercice
+									</xsl:element>
+
+									<xsl:element name="a">
+										<xsl:attribute name="href">../exercices/exo<xsl:value-of select="@numero"/>.zip</xsl:attribute>
+										<xsl:attribute name="title">Téléchargement - <xsl:value-of select="titre"/></xsl:attribute>
+										
+										<xsl:attribute name="class">btn rounded10 col-xs-12 col-sm-3</xsl:attribute>
+										Téléchargement
 									</xsl:element>
 
 								

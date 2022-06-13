@@ -7,7 +7,7 @@
 
 		<xsl:for-each select="exercice">
 
-			<xsl:if test="@numero = 4 or @numero = 5">
+			<xsl:if test="@numero = 3 or @numero = 5">
 
 				<div class="col-xs-12 col-sm-6 product-item">
 					<article>
@@ -18,7 +18,7 @@
 							<figure>
 								<xsl:element name="img">
 									<xsl:attribute name="src">
-										<xsl:value-of select="visuel" />
+										../images/exo<xsl:value-of select="@numero"/>.png
 										
 									</xsl:attribute>
 
