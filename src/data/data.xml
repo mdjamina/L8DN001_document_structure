@@ -65,14 +65,12 @@
         </question>
 
 
-        <visuel>images/us_antelop02_dBRUNO.jpg</visuel>
 
     </exercice>
 
     <exercice numero="5" niveau="2" obligatoire="true">
         <nom>DUCHN (xml)</nom>
         <titre>Exercice 5 : DUCHN (xml)</titre>
-        <visuel>../images/france_fchif_traineaux218_c_migeon-r.jpg</visuel>
         <download></download>
 
         <description>
