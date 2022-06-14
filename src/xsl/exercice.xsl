@@ -109,7 +109,7 @@
 						<ul id="infosSupp" class="row">
 							<li class="col-xs-12 col-sm-3">
 
-								<a title="L'exercice" href="../exercices/{$numero}.zip" class="scroll" download="solution_exo{$numero}.zip"><h5>Téléchargement</h5></a>
+								<a title="L'exercice" href="../exercices/exo{$numero}.zip" class="scroll" download="solution_exercice_{$numero}.zip"><h5>Téléchargement</h5></a>
 								
 								<xsl:value-of select="produit/Groupe" />
 							</li>

@@ -73,6 +73,7 @@
 									<xsl:element name="a">
 										<xsl:attribute name="href">../exercices/exo<xsl:value-of select="@numero"/>.zip</xsl:attribute>
 										<xsl:attribute name="title">Téléchargement - <xsl:value-of select="titre"/></xsl:attribute>
+										<xsl:attribute name="download">solution_exercice_<xsl:value-of select="@numero"/>.zip</xsl:attribute>
 										
 										<xsl:attribute name="class">btn rounded10 col-xs-12 col-sm-3</xsl:attribute>
 										Téléchargement
