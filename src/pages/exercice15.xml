@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf8"?>
+<?xml-stylesheet type="application/xml" href="../xsl/exercice15.xsl"?>
+<data>
+
+    <exercice numero="1" niveau="1" obligatoire="false">
+        <nom>Structurer l’information</nom>
+        <titre>Exercice 1 : Structurer l’information (vers une grammaire de document)</titre>
+
+        <description>
+            <p>XML permet de structurer une information. Il est donc nécessaire, avant d'envisager d'utiliser ce format, de se familariser avec cette structuration. Le paragraphe suivant contient de l'information "en vrac".</p>
+            <p>Réorganisez-la de manière à mettre en évidence sa structure logique, sans forcément passer par une mise en forme XML.</p>
+        </description>
+
+        <question>
+            <row name="01">
+                <titre></titre>
+                <description>
+                    <p>Une bouteille d'eau Cristaline de 150 cl contient par litre 71 mg d'ions positifs calcium, et 5,5 mg d'ions positifs magnésium. On y trouve également des ions négatifs comme des chlorures à 20 mg par litre et des nitrates avec 1 mg par litre. Elle est recueillie à St-Cyr la Source, dans le département du Loiret. Son code barre est 3274080005003 et son pH est de 7,45. Comme la bouteille est sale, quelques autres matériaux comme du fer s'y trouvent en suspension.</p>
+                </description>
+            </row>
+            <row name="02">
+                <titre></titre>
+                <description>
+                    <p>Une seconde bouteille d'eau Cristaline a été, elle, recueillie à la source d'Aurèle dans les Alpes Maritimes. La concentration en ions calcium est de 98 mg/l, et en ions magnésium de 4 mg/l. Il y a 3,6 mg/l d'ions chlorure et 2 mg/l de nitrates, pour un pH de 7,4. Le code barre de cette bouteille de 50 cl est 3268840001008.</p>
+                </description>
+            </row>
+            <row name="03">
+                <titre></titre>
+                <description>
+                    <p>Une bouteille de même contenance est de marque Volvic, et a été puisée à... Volvic, bien connu pour ses sources donnant un pH neutre de 7. Elle comprend 11,5 mg/l d'ions calcium, 8,0 mg/l d'ions magnésium, 13,5 mg/l d'ions chlorures et 6,3 mg/l d'ions nitrates. Elle contient également des particules de silice. Son code barre est 3057640117008.</p>
+                    <p> PS : Volvic est dans le Puy-de-Dôme...</p>
+                </description>
+            </row>
+
+        </question>
+        <img>images/1484130461IMG_8715.JPG</img>
+    </exercice>
+
+    <exercice numero="3" niveau="3" obligatoire="true">
+        <nom>TEI</nom>
+        <titre>Exercice 3 : TEI</titre>
+        <description>
+            <p>créer un fichier XML/TEI à partir d’un document txt obtenu par océrisation du Dictionnaire universel (1690) d’Antoine Furetière</p>
+        </description>
+        <question>
+            <row name="01">
+                <titre></titre>
+                <description> "Antiperistase" et "Apostre"</description>
+
+            </row>
+
+        </question>
+
+
+        <img>images/usa_photodisc_60329_xdr.jpg</img>
+
+    </exercice>
+
+    <exercice numero="5" niveau="2" obligatoire="true">
+        <nom>DUCHN (xml)</nom>
+        <titre>Exercice 5 : DUCHN (xml)</titre>
+        <download></download>
+
+        <description>
+            <p>Fichier de travail : duchn.xml (avec annotations morphosyntaxiques)</p>
+            <p>Le texte duch.xml contient le texte du Père Duchesne :</p>
+            <p>
+                <b>Le Père Duchesne</b>
+                est le titre de différents journaux qui ont paru sous plusieurs plumes durant la Révolution française. Le plus populaire était celui de Jacques-René Hébert, qui en a fait paraître 385 numéros de septembre 1790 jusqu’à onze jours avant sa mort à la guillotine, survenue le 4 germinal An II (24 mars 1794).
+            </p>
+
+        </description>
+        <question>
+
+            <row name="01">
+                <titre></titre>
+                <description>Définir une feuille de style dont le résultat est un document HTML et donnant à voir uniquement le texte. On essaiera de formater au mieux l’affichage  (séparer les mots… saut de ligne après paragraphe…)</description>
+
+            </row>
+
+            <row name="02">
+                <titre></titre>
+                <description>
+                    Définir une feuille de style dont le résultat est un document HTML et donnant à voir uniquement le texte en surlignant les mots dont le lemme est « aristocrate » ou « patriote »
+                    <br />
+                    <span>(stylage à définir par vous pour marquer le soulignement visé).</span>
+                </description>
+
+            </row>
+
+            <row name="03">
+                <titre></titre>
+                <description>Définir une feuille de style dont le résultat est un document TXT contenant la liste des mots contenant la séquence « citoy », puis la séquence « patriot » ; compter aussi la fréquence de chacun des mots</description>
+
+            </row>
+
+            <row name="04">
+                <titre></titre>
+                <description>Définir une feuille de style dont le résultat est un document TXT contenant la liste des catégories ; compter aussi la fréquence de chacune</description>
+
+            </row>
+
+            <row name="05">
+                <titre></titre>
+                <description>
+                    Définir une feuille de style permettant d’afficher le texte en surlignant les mots de catégories NOM ou ADJ
+                    <span>(stylage à définir par vous pour marquer le soulignement visé).</span>
+                </description>
+
+            </row>
+            <row name="06">
+                <titre></titre>
+                <description>Définir une feuille de style dont le résultat est un document TXT contenant la liste des séquences NOM ADJ</description>
+
+            </row>
+            <row name="07">
+                <titre></titre>
+                <description>Idem avec NOM PREP NOM</description>
+
+            </row>
+
+
+        </question>
+
+
+        <img></img>
+
+    </exercice>
+
+
+
+    <exercice numero="14" niveau="4" obligatoire="true">
+        <nom>Extraction dans les Fils RSS du Monde</nom>
+        <titre>EXERCICE 14 - Extraction dans les Fils RSS du Monde</titre>
+        <description>
+            <p>
+                <b>Partie 1</b> : Fichiers de travail : rubrique «A la Une» 2017 étiquetée avec treetagger</p>
+            <p>Ce fichier est disponible dans une archive sous iCampus : 3208-2017-v2.zip</p>
+            <p>
+                <b>Partie 2</b> : fichiers étiquetés avec udpipe dans le cours Projet Encadré</p>
+        </description>
+
+        <question>
+            <row name="Partie 1.1">
+                <titre>XSLT</titre>
+                <description>Construire une feuille de styles pour afficher les contenus étiquetés avec TreeTagger</description>
+
+            </row>
+            <row name="Partie 1.2">
+                <titre>XSLT</titre>
+                <description>Construire des feuilles de style pour extraire (au format TXT) au moins 3 patrons morpho-
+                    syntaxiques (de longueurs différentes) sur les mêmes fichiers </description>
+
+            </row>
+            <row name="Partie 1.3">
+                <titre>XSLT</titre>
+                <description>Construire une feuille de styles pour afficher les contenus étiquetés avec TreeTagger en 
+                    mettant au jour un patron morphosyntaxique. </description>
+
+            </row>
+            <row name="Partie 1.1">
+                <titre>XQuery</titre>
+                <description>Construire une requête pour extraire les contenus textuels des titres </description>
+
+            </row>
+            <row name="Partie 1.2">
+                <titre>XQuery</titre>
+                <description>Construire une requête pour extraire les contenus textuels des descriptions </description>
+
+            </row>
+            <row name="Partie 1.3">
+                <titre>XQuery</titre>
+                <description>Construire une requête pour extraire les contenus textuels des titres ET des descriptions</description>
+
+            </row>
+            <row name="Partie 1.4">
+                <titre>XQuery</titre>
+                <description>Construire une requête pour extraire les patrons morpho-syntaxiques NOM ADJ</description>
+
+            </row>
+            <row name="Partie 1.5">
+                <titre>XQuery</titre>
+                <description>Construire une requête pour extraire les patrons morpho-syntaxiques NOM PRP NOM</description>
+
+            </row>
+            <row name="Partie 2.1">
+                <titre></titre>
+                <description></description>
+
+            </row>
+            <row name="Partie 2.2">
+                <titre></titre>
+                <description></description>
+
+            </row>
+            <row name="Partie 2.3">
+                <titre></titre>
+                <description></description>
+
+            </row>
+            <row name="Partie 2.4">
+                <titre></titre>
+                <description></description>
+
+            </row>
+            <row name="Partie 2.5">
+                <titre></titre>
+                <description></description>
+
+            </row>
+            <row name="Partie 2.6">
+                <titre></titre>
+                <description></description>
+
+            </row>
+            <row name="Partie 2.7">
+                <titre></titre>
+                <description></description>
+
+            </row>
+        </question>
+
+
+        <img></img>
+
+    </exercice>
+
+    <exercice numero="15" niveau="2" obligatoire="true">
+        <nom>Patrons morphosyntaxiques / Relations de dépendance sur la Base TrameurFromRhapsodie</nom>
+        <titre>EXERCICE 15 - Patrons morphosyntaxiques / Relations de dépendance sur la Base TrameurFromRhapsodie</titre>
+        <question>
+            <row name="01">
+                <titre>Question 1: XSLT</titre>
+                <description>Construire une feuille de styles pour afficher uniquement le texte (sortie TXT)</description>
+
+            </row>
+            <row name="02">
+                <titre>Question 2</titre>
+                <description>
+                    <p>Construire une feuille de styles pour afficher (au format HTML) le texte en insérant sur chaque item sa POS</p>
+                    <p>Cet exercice a été effectué sur l'échantillon fournit sur iCampus de la base TrameurFromRhapsodie.</p>
+                </description>
+
+            </row>
+            <row name="03">
+                <titre>Question 3</titre>
+                <description>Construire une feuille de styles pour extraire (en format TXT) au moins 2 patrons morpho-syntaxiques de longueurs différentes
+                    <br/>
+les patrons  choisis: NOM-NOM et NOM-VERBE-ADJECTIF</description>
+
+            </row>
+            <row name="04">
+                <titre>Question 4</titre>
+                <description>Construire une feuille de styles pour extraire (au format TXT) les items en relation de dépendance syntaxique de type SUJET (les classer et les compter)
+                    <br/>
+                    Cet exercice a également été effectué sur l'échantillon fournit sur iCampus de la base TrameurFromRhapsodie. <br/>
+Le classement et le comptage ont été fait en ligne de commande : xsltproc Q4.xsl ../baseTrameurFromRhapsodie-echantillon.xml | sort | uniq -c | sort -nr > Q4.txt</description>
+
+            </row>
+            <row name="05">
+                <titre>Question 5</titre>
+                <description>Construire une feuille de styles pour extraire la liste des POS en relation de dépendance syntaxique de type SUJET (les classer et les compter)
+                    <br/>
+                    Ici aussi, le classement et le comptage ont été fait en ligne de commande : xsltproc Q5.xsl ../baseTrameurFromRhapsodie-echantillon.xml | sort | uniq -c | sort -nr > Q5.txt</description>
+
+            </row>
+            <row name="06">
+                <titre>Question 6 - Question subsidiaire</titre>
+                <description>Construire une feuille de styles pour afficher (au format HTML) tout le texte de la base en mettant au jour une relation de dépendance syntaxique choisie (par exemple OBJ) : l’affichage doit mettre au jour le dépendant et le gouverneur
+                    <br/>
+                    La relation de dépendance syntaxique que j'ai choisi est la relation SUB (sujet).</description>
+
+            </row>
+            <row name="07">
+                <titre>Question 7 - XQuery</titre>
+                <description>Construire une requête pour extraire les items portant une relation de dépendance syntaxique de type OBJ</description>
+
+            </row>
+            <row name="08">
+                <titre>Question 8</titre>
+                <description>Construire une requête pour extraire les items en relation de dépendance syntaxique de type OBJ (on affichera les formes ou les lemmes connectés par cette relation)</description>
+
+            </row>
+
+        </question>
+
+
+        <img></img>
+
+    </exercice>
+
+
+    <exercice numero="19" niveau="3" obligatoire="true">
+        <nom>Ulysse pour finir</nom>
+        <titre>EXERCICE 19 - Ulysse pour finir</titre>
+        <question>
+            <row name="01">
+                <titre>Question 1</titre>
+                <description>Ecrire une feuille de styles XSLT pour extraire uniquement le volet anglais de cet alignement (au format txt)</description>
+
+            </row>
+            <row name="02">
+                <titre>Question 2</titre>
+                <description>Ecrire une feuille de styles XSLT pour extraire uniquement le volet français de cet alignement (au format txt)</description>
+
+            </row>
+            <row name="03">
+                <titre>Question 3</titre>
+                <description>A partir des commandes précédentes, écrire une « commande » pour compter le nombre de mots dans chacun des 2 volets de cet alignement<br/>
+
+                    Je n'ai pas réussi à compter le nombre de mots dans chacun des 2 volets avec une feuille de style et des expressions XPath. J'ai seulement réussi à afficher le nombre de mots par balise mais étant donné qu'il n'est pas possible d'additionner des variables, il n'était pas possible d'utiliser cette information pour compter le nombre total de mots par volet. J'ai donc utilisé une commande bash pour compter le nombre de mot : wc -w mais le résultat n'est pas le même que sur cotEditor (éditeur). J'ai donc essayé d'enlever la ponctuation avec la commande : sed -e 's/[?!.,:…()—;]//g' 19_1.txt | wc -w mais le résultat n'est toujours pas le même.</description>
+
+            </row>
+            <row name="04">
+                <titre>Question 4</titre>
+                <description>Après avoir choisi un "mot" anglais ou français, écrire une feuille de styles XSLT pour extraire tous les bi-contextes contenant ce mot (le contexte contenant le mot choisi et sa traduction). Faire une sortie HTML dans laquelle le mot choisi initialement est mis en valeur « graphiquement »
+
+                    J'ai choisi le mot "sun".</description>
+
+            </row>
+            <row name="05">
+                <titre>Question 5 - XQUERY</titre>
+                <description>Après avoir choisi un « mot » anglais ou français, écrire une requête pour extraire tous les bi- contextes contenant ce mot (le contexte contenant le mot choisi et sa traduction)</description>
+
+            </row>
+        </question>
+
+
+        <img></img>
+
+    </exercice>
+</data>
+
+
+    
