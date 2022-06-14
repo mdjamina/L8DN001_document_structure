@@ -38,7 +38,9 @@
     <exercice numero="3" niveau="3" obligatoire="true">
         <nom>TEI</nom>
         <titre>Exercice 3 : TEI</titre>
-        <description><p>créer un fichier XML/TEI à partir d’un document txt obtenu par océrisation du Dictionnaire universel (1690) d’Antoine Furetière</p></description>
+        <description>
+            <p>créer un fichier XML/TEI à partir d’un document txt obtenu par océrisation du Dictionnaire universel (1690) d’Antoine Furetière</p>
+        </description>
         <question>
             <row name="01">
                 <titre></titre>
@@ -50,21 +52,6 @@
 
 
         <img>images/usa_photodisc_60329_xdr.jpg</img>
-
-    </exercice>
-
-    <exercice numero="4" niveau="2" obligatoire="false">
-        <nom>Funeral Blues…</nom>
-        <titre>Exercice 4 : Funeral Blues…</titre>
-        <question>
-            <row name="01">
-                <titre></titre>
-                <description></description>
-
-            </row>
-        </question>
-
-
 
     </exercice>
 
@@ -139,13 +126,17 @@
 
     </exercice>
 
-    <exercice numero="14" niveau="2" obligatoire="true">
+
+
+    <exercice numero="14" niveau="4" obligatoire="true">
         <nom>Extraction dans les Fils RSS du Monde</nom>
         <titre>EXERCICE 14 - Extraction dans les Fils RSS du Monde</titre>
         <description>
-            <p><b>Partie 1</b> : Fichiers de travail : rubrique «A la Une» 2017 étiquetée avec treetagger</p>
+            <p>
+                <b>Partie 1</b> : Fichiers de travail : rubrique «A la Une» 2017 étiquetée avec treetagger</p>
             <p>Ce fichier est disponible dans une archive sous iCampus : 3208-2017-v2.zip</p>
-            <p><b>Partie 2</b> : fichiers étiquetés avec udpipe dans le cours Projet Encadré</p>
+            <p>
+                <b>Partie 2</b> : fichiers étiquetés avec udpipe dans le cours Projet Encadré</p>
         </description>
 
         <question>
@@ -244,21 +235,25 @@
             </row>
             <row name="02">
                 <titre>Question 2</titre>
-                <description><p>Construire une feuille de styles pour afficher (au format HTML) le texte en insérant sur chaque item sa POS</p>
-                    <p>Cet exercice a été effectué sur l'échantillon fournit sur iCampus de la base TrameurFromRhapsodie.</p></description>
+                <description>
+                    <p>Construire une feuille de styles pour afficher (au format HTML) le texte en insérant sur chaque item sa POS</p>
+                    <p>Cet exercice a été effectué sur l'échantillon fournit sur iCampus de la base TrameurFromRhapsodie.</p>
+                </description>
 
             </row>
             <row name="03">
                 <titre>Question 3</titre>
                 <description>Construire une feuille de styles pour extraire (en format TXT) au moins 2 patrons morpho-syntaxiques de longueurs différentes
-                    <br/>les patrons  choisis: NOM-NOM et NOM-VERBE-ADJECTIF</description>
+                    <br/>
+les patrons  choisis: NOM-NOM et NOM-VERBE-ADJECTIF</description>
 
             </row>
             <row name="04">
                 <titre>Question 4</titre>
                 <description>Construire une feuille de styles pour extraire (au format TXT) les items en relation de dépendance syntaxique de type SUJET (les classer et les compter)
                     <br/>
-                    Cet exercice a également été effectué sur l'échantillon fournit sur iCampus de la base TrameurFromRhapsodie. <br/>Le classement et le comptage ont été fait en ligne de commande : xsltproc Q4.xsl ../baseTrameurFromRhapsodie-echantillon.xml | sort | uniq -c | sort -nr > Q4.txt</description>
+                    Cet exercice a également été effectué sur l'échantillon fournit sur iCampus de la base TrameurFromRhapsodie. <br/>
+Le classement et le comptage ont été fait en ligne de commande : xsltproc Q4.xsl ../baseTrameurFromRhapsodie-echantillon.xml | sort | uniq -c | sort -nr > Q4.txt</description>
 
             </row>
             <row name="05">
@@ -293,7 +288,8 @@
 
     </exercice>
 
-    <exercice numero="19" niveau="2" obligatoire="true">
+
+    <exercice numero="19" niveau="3" obligatoire="true">
         <nom>Ulysse pour finir</nom>
         <titre>EXERCICE 19 - Ulysse pour finir</titre>
         <question>
