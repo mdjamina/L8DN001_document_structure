@@ -185,11 +185,12 @@
 										<xsl:element name="img">
 											<xsl:attribute name="src">
 											../images/exo<xsl:value-of select="@numero"/>
-.png
+w.png
 											</xsl:attribute>
 											<xsl:attribute name="class">rsImg rsMainSlideImage</xsl:attribute>
-											<xsl:attribute name="style">width: 578px; height: 384px; margin-left: 0px; margin-top: -30px;</xsl:attribute>
+											<xsl:attribute name="style"> height: 384px; margin-left: 0px; margin-top: -30px;</xsl:attribute>
 										</xsl:element>
+		
 
 									</div>
 								</div>
